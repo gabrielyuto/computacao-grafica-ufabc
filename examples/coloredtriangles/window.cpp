@@ -1,6 +1,7 @@
 #include "window.hpp"
 
 void Window::onCreate() {
+  //Programa executado para cada vértice
   auto const *vertexShader{R"gl(#version 300 es
                                    
     layout(location = 0) in vec2 inPosition;
