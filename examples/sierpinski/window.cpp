@@ -1,7 +1,8 @@
 #include "window.hpp"
 
 void Window::onCreate() {
-  auto const *vertexShader{R"gl(#version 300 es
+  auto const *vertexShader{R"gl(
+    #version 400 
     layout(location = 0) in vec2 inPosition;
 
     void main() { 
@@ -10,7 +11,8 @@ void Window::onCreate() {
     }
   )gl"};
 
-  auto const *fragmentShader{R"gl(#version 300 es
+  auto const *fragmentShader{R"gl(
+    #version 400
     precision mediump float;
 
     out vec4 outColor;
